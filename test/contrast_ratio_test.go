@@ -3,7 +3,7 @@ package testing
 import (
 	"encoding/csv"
 	"fmt"
-	. "github.com/gioni06/go-color-contrast"
+	. "github.com/Gioni06/go-color-contrast-ratio"
 	"image/color"
 	"io"
 	"log"
@@ -80,20 +80,4 @@ func TestContrastRatio(t *testing.T) {
 			t.Errorf("contrast ratio not matched for colors %s, %s. Given %s, Actual %s", tc.ColorAHex, tc.ColorBHex, test, input)
 		}
 	}
-}
-
-func TestName(t *testing.T) {
-	colorA := color.RGBA{
-		R: 255,
-		G: 255,
-		B: 255,
-		A: 255,
-	}
-	colorB := color.RGBA{
-		R: 231,
-		G: 48,
-		B: 55,
-		A: 255,
-	}
-	fmt.Println(ContrastRatioGo(colorA, colorB))
 }

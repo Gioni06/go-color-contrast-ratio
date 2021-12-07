@@ -1,3 +1,3 @@
-module github.com/gioni06/go-color-contrast
+module github.com/Gioni06/go-color-contrast-ratio
 
 go 1.17
