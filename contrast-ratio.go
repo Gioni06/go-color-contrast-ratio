@@ -37,7 +37,7 @@ func toArithmetic(col color.Color) (r, g, b float64) {
 	return
 }
 
-func ContrastRatioGo(a, b color.Color) float64 {
+func Calculate(a, b color.Color) float64 {
 	luminancePair := []float64{
 		luminance(toArithmetic(a)),
 		luminance(toArithmetic(b)),

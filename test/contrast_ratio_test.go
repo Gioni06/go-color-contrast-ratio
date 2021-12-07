@@ -71,7 +71,7 @@ func TestContrastRatio(t *testing.T) {
 	}
 
 	for _, tc := range testColors {
-		rawContrastRatioString := fmt.Sprintf("%f", ContrastRatioGo(tc.ColorA, tc.ColorB))
+		rawContrastRatioString := fmt.Sprintf("%f", Calculate(tc.ColorA, tc.ColorB))
 		input := rawContrastRatioString[0:4]
 		input = TrimTrailingZeros(input)
 		test := TrimTrailingZeros(tc.ContrastRatio)

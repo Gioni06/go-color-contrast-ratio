@@ -7,7 +7,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gioni06/go-color-contrast"
+	"github.com/Gioni06/go-color-contrast-ratio"
 	"image/color"
 )
 
@@ -25,6 +25,6 @@ func main()  {
 		A: 255,
 	}
 	// 4.307044780466779
-	fmt.Println(colorcontrast.ContrastRatioGo(colorA, colorB))
+	fmt.Println(colorcontrast.Calculate(colorA, colorB))
 }
 ```
